@@ -96,9 +96,9 @@ namespace eTickets.Data
                     context.SaveChanges();
                 }
                 //Producers
-                if (!context.Cinemas.Any())
+                if (!context.Producers.Any())
                 {
-                    context.Cinemas.AddRange(new List<Producer>()
+                    context.Producers.AddRange(new List<Producer>()
                     {
                         new Producer()
                         {
